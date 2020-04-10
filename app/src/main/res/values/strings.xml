@@ -8,4 +8,15 @@
     <string name="your_passworda">Your Password</string>
     <string name="create_an_account">Create an Account</string>
     <string name="already_have_an_account_login">Already Have an Account?Login</string>
+    <string name="add_cakes">Add Cakes</string>
+    <string name="add_new_category">add new  cake category</string>
+    <string name="edit_categories">Edit Categories</string>
+    <string name="product_category_name">Product Category Name</string>
+    <string name="add_cake">Add Cake</string>
+    <string name="back">back</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="customer_details">Customer Details</string>
+    <string name="order_details">Order Details</string>
+    <string name="name">Name</string>
 </resources>

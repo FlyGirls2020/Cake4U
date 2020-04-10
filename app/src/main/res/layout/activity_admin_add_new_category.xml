@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_add_new_category">
+    <RelativeLayout
+        android:id="@+id/admin_category_relative_layout_top"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="40dp">
+        <Button
+            android:id="@+id/admin_category_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:background="@color/colorAccent"
+
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="back"
+            android:textColor="@android:color/white"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:layout_below="@+id/admin_category_relative_layout_top"
+        android:id="@+id/admin_select_category_image"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:contentDescription="@string/add_cakes"
+
+
+        android:layout_marginTop="10dp"
+        android:src="@drawable/addcake"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/admin_category_input_layer1"
+        android:layout_width="match_parent"
+
+        android:layout_below="@+id/admin_select_category_image"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/admin_category_product_name"
+            android:autofillHints="Product Category Name"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:padding="10dp"
+            android:layout_marginRight="55dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="55dp"
+            android:layout_width="match_parent"
+            android:hint="@string/product_category_name"
+            android:textColor="@color/colorPrimaryDark"
+
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_add_new_product_category"
+        android:padding="4dp"
+        android:textSize="18sp"
+        android:text="@string/add_new_category"
+        android:background="@drawable/admin_input_design"
+
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/admin_category_input_layer1"
+        />
+    <LinearLayout
+        android:layout_below="@+id/admin_add_new_product_category"
+        android:id="@+id/admin_add_category_linears1"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/category_edit_heading"
+            android:layout_width="match_parent"
+            android:text="@string/edit_categories"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="wrap_content" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/admin_add_new_product_category"
+            android:id="@+id/category_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

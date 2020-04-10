@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Admin_notification_Activity">
+
+
+    <RelativeLayout
+        android:id="@+id/admin_change_product_not_layoutss_top"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="40dp">
+        <Button
+            android:id="@+id/admin_view_notification_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:background="@color/colorAccent"
+
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/back"
+            android:textColor="@android:color/white"
+            />
+
+        <TextView
+
+            android:id="@+id/admin_edit_cus_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="Message"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            />
+    </RelativeLayout>
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/admin_admin_notification1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.baoyz.swipemenulistview.SwipeMenuListView>
+
+
+</LinearLayout>
+
+

@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".AdminHomeActivity"></activity>
+        <activity android:name=".Admin_view_customer_orders" />
+        <activity android:name=".Admin_view_customer" />
+        <activity android:name=".Admin_notification_Activity" />
+        <activity android:name=".Admin_edit_cakes" />
+        <activity android:name=".Admin_edit_categories" />
+        <activity android:name=".Admin_add_cakes" />
+        <activity android:name=".Admin_add_new_category" />
+        <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".AppHomeActivity" />
         <activity android:name=".HomeScreen" />
