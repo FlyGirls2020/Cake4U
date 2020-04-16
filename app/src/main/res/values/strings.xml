@@ -32,5 +32,10 @@
     <string name="close">Close</string>
     <string name="name221">Name</string>
     <string name="view_details1">View Details</string>
+    <string name="_0_comments">0 Comments</string>
+    <string name="price_ad">Price</string>
+    <string name="_0_likes">0 likes</string>
+    <string name="available">Available</string>
+    <string name="current">current</string>
 
 </resources>
