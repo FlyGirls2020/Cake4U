@@ -1,7 +1,5 @@
 package com.example.cake4u.Prevelent;
 
-import com.example.cake4u.model.User;
-
 public  class Prevelent {
 
     public static User currentOnlineUser;

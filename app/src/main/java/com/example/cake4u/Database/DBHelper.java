@@ -13,7 +13,6 @@ import android.graphics.BitmapFactory;
 import com.example.cake4u.model.Cart;
 import com.example.cake4u.model.CakeItems;
 import com.example.cake4u.model.Cakes;
-import com.example.cake4u.model.User;
 import com.example.cake4u.model.cus_orders;
 import com.example.cake4u.model.payments;
 import com.example.cake4u.model.sellers;
