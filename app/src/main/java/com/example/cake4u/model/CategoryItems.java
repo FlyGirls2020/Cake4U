@@ -2,12 +2,12 @@ package com.example.cake4u.model;
 
 import android.graphics.Bitmap;
 
-public class CakeItems {
+public class CategoryItems {
     private String name;
     private Bitmap bitmap;
     private String id;
 
-    public CakeItems(String name, Bitmap bitmap) {
+    public CategoryItems(String name, Bitmap bitmap) {
         this.name = name;
         this.bitmap = bitmap;
     }

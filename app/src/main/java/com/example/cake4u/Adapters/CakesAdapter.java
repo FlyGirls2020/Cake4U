@@ -15,12 +15,12 @@ import com.example.cake4u.model.Cakes;
 
 import java.util.ArrayList;
 
-public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ProductViewAdapter> {
+public class CakesAdapter extends RecyclerView.Adapter<CakesAdapter.ProductViewAdapter> {
     private Context contexts;
     private ArrayList<Cakes> myitems;
     private static ClickListener clickListener;
 
-    public ProductsAdapter(Context contexts, ArrayList<Cakes> myitems) {
+    public CakesAdapter(Context contexts, ArrayList<Cakes> myitems) {
         this.contexts = contexts;
         this.myitems = myitems;
     }
@@ -33,7 +33,7 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
         LayoutInflater inflater=LayoutInflater.from(contexts);
         View view=inflater.inflate(R.layout.admin_cakes_list,null);
 
-        return  new ProductsAdapter.ProductViewAdapter(view);
+        return  new CakesAdapter.ProductViewAdapter(view);
     }
 
     @Override
@@ -87,7 +87,7 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
     }
 
     public void setOnItemClickListener(ClickListener clickListener) {
-        ProductsAdapter.clickListener=clickListener;
+        CakesAdapter.clickListener=clickListener;
     }
     public interface ClickListener {
         void onItemClick(int position, View v);

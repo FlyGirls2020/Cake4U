@@ -11,7 +11,6 @@ import android.graphics.BitmapFactory;
 
 
 import com.example.cake4u.model.Cart;
-import com.example.cake4u.model.CakeItems;
 import com.example.cake4u.model.Cakes;
 import com.example.cake4u.model.cus_orders;
 import com.example.cake4u.model.payments;
@@ -749,7 +748,7 @@ public class DBHelper extends SQLiteOpenHelper {
             Bitmap bitmap;
 
             bitmap= BitmapFactory.decodeByteArray(image,0,image.length);
-            CategoryItems items=new CategoryItems(name,bitmap);
+            CakeItems items=new CategoryItems(name,bitmap);
             items.setId(id);
             list.add(items);
         }
