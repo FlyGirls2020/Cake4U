@@ -41,5 +41,14 @@
     <string name="price11">Price</string>
     <string name="delivered1">Delivered</string>
     <string name="product_name21">Product Name</string>
+    <string name="profile1">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="sell_products">Sell Products</string>
+    <string name="admin_page1">Admin Page</string>
+    <string name="carts">carts</string>
+    <string name="customers1">Customers</string>
+    <string name="seller">Seller</string>
+    <string name="userhome1">UserHome</string>
+    <string name="categories">categories</string>
 
 </resources>
