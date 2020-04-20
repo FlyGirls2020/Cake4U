@@ -39,7 +39,7 @@ public class User {
     }
 
     public String getPassword() {
-        return password;
+        return passwoord;
     }
 
     public void setPassword(String password) {
