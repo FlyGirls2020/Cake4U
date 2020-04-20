@@ -645,7 +645,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
             bitmap= BitmapFactory.decodeByteArray(image,0,image.length);
 
-            Products products=new Products(id,name,bitmap,fid,count,desc,price);
+            Cakes products=new Cakes(id,name,bitmap,fid,count,desc,price);
             list.add(products);
 
         }
@@ -735,10 +735,10 @@ public class DBHelper extends SQLiteOpenHelper {
         return list;
     }
     public ArrayList Retrive_Product_Category_Details(){
-        ArrayList<CategoryItems> list=new ArrayList<>();
+        ArrayList<CakeItems> list=new ArrayList<>();
         SQLiteDatabase db=getReadableDatabase();
 
-        String sql="SELECT * FROM "+ CustomerMaster.ProductCategory.TABLE_NAME;
+        String sql="SELECT * FROM "+ CustomerMaster.CakeCategory.TABLE_NAME;
 
         Cursor cu=db.rawQuery(sql,null);
         byte[] image;
@@ -787,9 +787,9 @@ public class DBHelper extends SQLiteOpenHelper {
     public boolean Admin_delete_current_product(String id){
         try{
             SQLiteDatabase db=getReadableDatabase();
-            String selection=CustomerMaster.ProductItems.COLUMN_NAME_ID + " = ?";
+            String selection=CustomerMaster.CakeItems.COLUMN_NAME_ID + " = ?";
             String[] selectionArgs = {id};
-             int rowsAffected=db.delete(CustomerMaster.ProductItems.TABLE_NAME,selection,selectionArgs);
+             int rowsAffected=db.delete(CustomerMaster.CakeItems.TABLE_NAME,selection,selectionArgs);
             return rowsAffected > 0;
         }
         catch (Exception e){

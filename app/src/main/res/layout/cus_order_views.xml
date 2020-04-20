@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent"
+        android:padding="20dp">
+
+
+        <TextView
+            android:id="@+id/User_list_product_order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="4dp"
+
+            android:layout_marginBottom="19dp"
+            android:text="@string/order_id1"
+
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/User_payment_total"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:gravity="center"
+            android:text="@string/price11"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/User_list_product_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+
+
+
+            android:layout_marginTop="0dp"
+            android:text="@string/delivered1"
+            android:textAlignment="viewEnd"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -37,5 +37,9 @@
     <string name="_0_likes">0 likes</string>
     <string name="available">Available</string>
     <string name="current">current</string>
+    <string name="order_id1">Order id</string>
+    <string name="price11">Price</string>
+    <string name="delivered1">Delivered</string>
+    <string name="product_name21">Product Name</string>
 
 </resources>

@@ -1,0 +1,37 @@
+package com.example.cake4u.model;
+
+import android.graphics.Bitmap;
+
+public class CakeItems {
+    private String name;
+    private Bitmap bitmap;
+    private String id;
+
+    public CakeItems(String name, Bitmap bitmap) {
+        this.name = name;
+        this.bitmap = bitmap;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Bitmap getBitmap() {
+        return bitmap;
+    }
+
+    public void setId(String id){
+        this.id=id;
+    }
+    public  String getId(){
+        return this.id;
+    }
+
+    public void setBitmap(Bitmap bitmap) {
+        this.bitmap = bitmap;
+    }
+}
