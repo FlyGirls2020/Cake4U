@@ -14,7 +14,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.shopcenter.Database.DBHelper;
+import com.example.cake4u.Database.DBHelper;
 
 import org.w3c.dom.Text;
 

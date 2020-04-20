@@ -50,5 +50,7 @@
     <string name="seller">Seller</string>
     <string name="userhome1">UserHome</string>
     <string name="categories">categories</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
 </resources>

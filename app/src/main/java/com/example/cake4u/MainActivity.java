@@ -11,9 +11,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.shopcenter.Database.DBHelper;
-import com.example.shopcenter.Prevelent.Prevelent;
-import com.example.shopcenter.model.User;
+import com.example.cake4u.Database.DBHelper;
+import com.example.cake4u.Prevelent.Prevelent;
+import com.example.cake4u.model.User;
 
 import io.paperdb.Paper;
 
