@@ -24,7 +24,8 @@
 
             android:textColor="@android:color/white"
             android:textSize="17sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginLeft="4dp" />
 
 
         <TextView
@@ -38,7 +39,8 @@
             android:textColor="@android:color/white"
             android:textSize="17sp"
 
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp" />
         <TextView
             android:id="@+id/User_list_product_delivery"
             android:layout_width="wrap_content"
@@ -53,7 +55,9 @@
             android:textAllCaps="false"
             android:textColor="@android:color/white"
             android:textSize="17sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:gravity="end" />
 
 
 

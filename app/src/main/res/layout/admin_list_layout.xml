@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:background="@android:color/white"
@@ -34,7 +34,7 @@
         android:background="@android:color/white"
         android:gravity="center"
         android:cursorVisible="false"
-        android:hint="@string/search_product_name"
+        android:hint="@string/search_cake_name"
         android:padding="5dp"
         android:textColor="@color/colorAccent"
         android:textColorHint="@android:color/darker_gray"

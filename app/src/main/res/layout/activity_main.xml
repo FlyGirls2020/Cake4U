@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/home1"
     android:layout_width="match_parent"
@@ -34,7 +34,9 @@
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         android:textSize="22sp"
-        android:textStyle="bold|italic" />
+        android:textStyle="bold|italic"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="88dp" />
 
     <Button
         android:id="@+id/main_join_now_btn"
@@ -69,5 +71,6 @@
         android:textSize="18sp"
         android:text="Already I Have an Account? Login"
         android:textColor="@android:color/white"
-        />
+        android:layout_alignParentLeft="true" />
+</RelativeLayout>
 

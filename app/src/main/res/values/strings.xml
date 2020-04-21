@@ -52,5 +52,17 @@
     <string name="categories">categories</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="product_count21">Cake Count</string>
+    <string name="productPrice21">Cake Price</string>
+    <string name="product_count">Cake_cnt</string>
+    <string name="product_name">Cake_names</string>
+    <string name="product_description">product_des</string>
+    <string name="product_price">product_pri</string>
+    <string name="title_activity_admin_home">Admin</string>
+    <string name="cake4u">Cake4U</string>
+    <string name="product_description21">Cake Description</string>
+    <string name="search_cake_name">Search Cake Name</string>
+    <string name="zero0">0</string>
+
 
 </resources>

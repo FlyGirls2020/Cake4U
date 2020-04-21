@@ -37,7 +37,9 @@
                     android:focusableInTouchMode="false"
                     android:src="@drawable/user_cart_icon"
                     android:textColor="@android:color/darker_gray"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="39dp" />
 
 
                 <ImageView
@@ -53,7 +55,9 @@
 
                     android:src="@drawable/ic_user_serch_icon1"
 
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:layout_marginRight="-212dp"
+                    android:layout_toLeftOf="@+id/user_search_products" />
 
                 <TextView
                     android:id="@+id/cart_count_notification"
@@ -70,7 +74,9 @@
                     android:background="@drawable/round_text_view_file"
                     android:gravity="center"
                     android:text="@string/zero0"
-                    android:textColor="@android:color/white" />
+                    android:textColor="@android:color/white"
+                    android:layout_marginRight="-29dp"
+                    android:layout_toLeftOf="@+id/admin_cart_icons" />
 
                 <EditText
                     android:id="@+id/user_search_products"
@@ -81,7 +87,9 @@
                     android:ems="10"
                     android:hint="Search Product"
                     android:inputType="textPersonName"
-                    android:textColor="@android:color/white" />
+                    android:textColor="@android:color/white"
+                    android:layout_marginRight="115dp"
+                    android:layout_toLeftOf="@+id/admin_cart_icons" />
             </RelativeLayout>
 
 

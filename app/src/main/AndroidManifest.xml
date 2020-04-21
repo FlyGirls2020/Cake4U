@@ -21,7 +21,10 @@
         <activity android:name=".SellerAddCakeActivity" />
         <activity android:name=".CakeDetailActivity" />
         <activity android:name=".Seller_approval" />
-        <activity android:name=".AdminHomeActivity" />
+        <activity android:name=".AdminHomeActivity"
+            android:label="@string/title_activity_admin_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+            />
         <activity android:name=".Admin_view_customer_orders" />
         <activity android:name=".Admin_view_customer" />
         <activity android:name=".Admin_notification_Activity" />
@@ -31,15 +34,26 @@
         <activity android:name=".Admin_add_new_category" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".AppHomeActivity" />
-        <activity android:name=".HomeScreen" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".AppHomeActivity"
+            android:label="@string/cake4u"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity android:name=".HomeScreen" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>>
+        <activity android:name=".MainActivity">
+
         </activity>
     </application>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
 
 </manifest>

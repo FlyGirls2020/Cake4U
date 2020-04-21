@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -114,7 +114,8 @@
         android:layout_marginLeft="100dp"
         android:text="@string/create_account"
 
-        />
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true" />
     <CheckBox
         android:id="@+id/admin_panel_chk"
         android:layout_width="wrap_content"
@@ -130,6 +131,6 @@
         android:layout_marginLeft="100dp"
         android:text="I'm an Admin?"
 
-        />
+        android:layout_alignParentLeft="true" />
 
 </RelativeLayout>

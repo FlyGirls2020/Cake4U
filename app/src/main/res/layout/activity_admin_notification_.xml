@@ -38,7 +38,7 @@
             android:textSize="18sp"
             android:textStyle="bold"
 
-            />
+            android:layout_alignParentRight="true" />
     </RelativeLayout>
 
     <com.baoyz.swipemenulistview.SwipeMenuListView
