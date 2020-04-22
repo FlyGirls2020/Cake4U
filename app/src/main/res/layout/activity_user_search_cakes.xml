@@ -20,7 +20,7 @@
             android:layout_width="270dp"
             android:padding="5dp"
             android:textColor="@color/colorAccent"
-            android:hint="Product Name"
+            android:hint="Cake Name"
             android:gravity="center"
             android:background="@android:color/white"
             android:textColorHint="@android:color/darker_gray"

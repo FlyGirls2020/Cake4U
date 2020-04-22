@@ -8,10 +8,15 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.os.Build;
 
+
+import androidx.annotation.RequiresApi;
 
 import com.example.cake4u.model.Cart;
 import com.example.cake4u.model.Cakes;
+import com.example.cake4u.model.CategoryItems;
+import com.example.cake4u.model.User;
 import com.example.cake4u.model.cus_orders;
 import com.example.cake4u.model.payments;
 import com.example.cake4u.model.sellers;
@@ -36,6 +41,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     @Override
     public void onConfigure(SQLiteDatabase db){
         db.setForeignKeyConstraintsEnabled(true);
@@ -664,31 +670,31 @@ public class DBHelper extends SQLiteOpenHelper {
         int i =0;
         while (cu.moveToNext()){
 
-                String id = cu.getString(0);
-                String seller_name=cu.getString(1);
-                String check_value = cu.getString(4);
-                String cu_id = cu.getString(5);
+            String id = cu.getString(0);
+            String seller_name=cu.getString(1);
+            String check_value = cu.getString(4);
+            String cu_id = cu.getString(5);
 
 
-                String sql1 = "SELECT * FROM " + CustomerMaster.Profile.TABLE_NAME + " WHERE " + CustomerMaster.Profile.COLUMN_FOREIGNKEY_CUS_ID + " = "
-                        + cu_id;
-                SQLiteDatabase db1 = getReadableDatabase();
-                Cursor cu1 = db1.rawQuery(sql1, null);
-                byte[] image;
-                Bitmap bitmap = null;
-                while (cu1.moveToNext()) {
-                    System.out.println("cus:"+cu_id);
-                    image = cu1.getBlob(1);
-                    bitmap = BitmapFactory.decodeByteArray(image, 0, image.length);
-                }
-                cu1.close();
-               sellers seller1=new sellers();
-                seller1.setId(id);
-                seller1.setName(seller_name);
-                seller1.setDvalue(check_value);
-                seller1.setBitmap( bitmap);
+            String sql1 = "SELECT * FROM " + CustomerMaster.Profile.TABLE_NAME + " WHERE " + CustomerMaster.Profile.COLUMN_FOREIGNKEY_CUS_ID + " = "
+                    + cu_id;
+            SQLiteDatabase db1 = getReadableDatabase();
+            Cursor cu1 = db1.rawQuery(sql1, null);
+            byte[] image;
+            Bitmap bitmap = null;
+            while (cu1.moveToNext()) {
+                System.out.println("cus:"+cu_id);
+                image = cu1.getBlob(1);
+                bitmap = BitmapFactory.decodeByteArray(image, 0, image.length);
+            }
+            cu1.close();
+            sellers seller1=new sellers();
+            seller1.setId(id);
+            seller1.setName(seller_name);
+            seller1.setDvalue(check_value);
+            seller1.setBitmap( bitmap);
 
-                list.add(seller1);
+            list.add(seller1);
 
         }
         cu.close();
@@ -734,7 +740,7 @@ public class DBHelper extends SQLiteOpenHelper {
         return list;
     }
     public ArrayList Retrive_Product_Category_Details(){
-        ArrayList<CakeItems> list=new ArrayList<>();
+        ArrayList<CategoryItems> list=new ArrayList<>();
         SQLiteDatabase db=getReadableDatabase();
 
         String sql="SELECT * FROM "+ CustomerMaster.CakeCategory.TABLE_NAME;
@@ -748,7 +754,7 @@ public class DBHelper extends SQLiteOpenHelper {
             Bitmap bitmap;
 
             bitmap= BitmapFactory.decodeByteArray(image,0,image.length);
-            CakeItems items=new CategoryItems(name,bitmap);
+            CategoryItems items=new CategoryItems(name,bitmap);
             items.setId(id);
             list.add(items);
         }
@@ -788,7 +794,7 @@ public class DBHelper extends SQLiteOpenHelper {
             SQLiteDatabase db=getReadableDatabase();
             String selection=CustomerMaster.CakeItems.COLUMN_NAME_ID + " = ?";
             String[] selectionArgs = {id};
-             int rowsAffected=db.delete(CustomerMaster.CakeItems.TABLE_NAME,selection,selectionArgs);
+            int rowsAffected=db.delete(CustomerMaster.CakeItems.TABLE_NAME,selection,selectionArgs);
             return rowsAffected > 0;
         }
         catch (Exception e){

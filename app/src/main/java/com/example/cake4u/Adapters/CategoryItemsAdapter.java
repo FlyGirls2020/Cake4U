@@ -12,14 +12,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.cake4u.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
+import com.example.cake4u.model.CategoryItems;
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class CategoryItemsAdapter extends RecyclerView.Adapter<CategoryItemsAdapter.CategoryItemsViewAdapter> {
     private Context contexts;
-    private ArrayList<CakeItems> myitems;
+    private ArrayList<CategoryItems> myitems;
     private static ClickListener clickListener;
-    public CategoryItemsAdapter(Context contexts, ArrayList<CakeItems> myitems) {
+    public CategoryItemsAdapter(Context contexts, ArrayList<CategoryItems> myitems) {
         this.contexts = contexts;
         this.myitems = myitems;
     }
@@ -35,7 +36,7 @@ public class CategoryItemsAdapter extends RecyclerView.Adapter<CategoryItemsAdap
 
     @Override
     public void onBindViewHolder(@NonNull CategoryItemsViewAdapter holder, int position) {
-        CakeItems category=myitems.get(position);
+        CategoryItems category=myitems.get(position);
         holder.categoryImage.setImageBitmap(category.getBitmap());
         holder.categoryImageName.setText(category.getName());
     }
@@ -58,14 +59,14 @@ public class CategoryItemsAdapter extends RecyclerView.Adapter<CategoryItemsAdap
             mybutton=itemView.findViewById(R.id.admin_edit_category_details );
 
             mybutton.setOnClickListener(this);
-             categoryImage.setOnLongClickListener(this);
+            categoryImage.setOnLongClickListener(this);
 
 
         }
 
         @Override
         public void onClick(View view) {
-           clickListener.onItemClick(getAdapterPosition(), view);
+            clickListener.onItemClick(getAdapterPosition(), view);
 
         }
 

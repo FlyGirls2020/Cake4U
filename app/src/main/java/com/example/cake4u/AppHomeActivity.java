@@ -258,7 +258,7 @@ public class AppHomeActivity extends AppCompatActivity
             Intent intent=new Intent(AppHomeActivity.this,User_card_Activity.class);
             startActivity(intent);
         }else if (id == R.id.nav_settings) {
-            Intent intent=new Intent(AppHomeActivity.this,User_settings_Activity.class);
+            Intent intent=new Intent(AppHomeActivity.this,User_settings_activity.class);
             startActivity(intent);
         }
         else if(id==R.id.nav_seller_btn){

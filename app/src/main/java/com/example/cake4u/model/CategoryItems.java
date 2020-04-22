@@ -34,4 +34,6 @@ public class CategoryItems {
     public void setBitmap(Bitmap bitmap) {
         this.bitmap = bitmap;
     }
+
+
 }

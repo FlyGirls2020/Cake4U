@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.cake4u">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +14,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity_user_card_update"></activity>
+        <activity android:name=".activity_user_card_update" />
         <activity android:name=".User_settings_activity" />
         <activity android:name=".User_search_cakes" />
         <activity android:name=".User_payment_Activity" />
@@ -21,10 +26,10 @@
         <activity android:name=".SellerAddCakeActivity" />
         <activity android:name=".CakeDetailActivity" />
         <activity android:name=".Seller_approval" />
-        <activity android:name=".AdminHomeActivity"
+        <activity
+            android:name=".AdminHomeActivity"
             android:label="@string/title_activity_admin_home"
             android:theme="@style/AppTheme.NoActionBar" />
-            />
         <activity android:name=".Admin_view_customer_orders" />
         <activity android:name=".Admin_view_customer" />
         <activity android:name=".Admin_notification_Activity" />
@@ -34,26 +39,18 @@
         <activity android:name=".Admin_add_new_category" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".AppHomeActivity"
+        <activity
+            android:name=".AppHomeActivity"
             android:label="@string/cake4u"
-            android:theme="@style/AppTheme.NoActionBar"
-            />
-        <activity android:name=".HomeScreen" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".HomeScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-        </activity>>
-        <activity android:name=".MainActivity">
-
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
 
 </manifest>

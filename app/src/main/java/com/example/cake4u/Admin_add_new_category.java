@@ -131,14 +131,15 @@ public class Admin_add_new_category extends AppCompatActivity {
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        switch(requestCode) {
+        super.onActivityResult(requestCode, resultCode, data);
+        switch (requestCode) {
             case REQUEST_CODE_GALLERY:
-                if(resultCode == RESULT_OK){
+                if (resultCode == RESULT_OK) {
                     Uri choosenImage = data.getData();
 
-                    if(choosenImage !=null){
+                    if (choosenImage != null) {
 
-                        bp=decodeUri(choosenImage, 400);
+                        bp = decodeUri(choosenImage, 400);
                         admin_category_image.setImageBitmap(bp);
                     }
                 }

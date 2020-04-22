@@ -1,9 +1,12 @@
 package com.example.cake4u.Database;
 
+import android.graphics.Bitmap;
 import android.provider.BaseColumns;
 
 
 public final class CustomerMaster {
+    public static CakeCategory SellerCaketItems;
+
     private CustomerMaster(){}
 
     public static class Customers implements BaseColumns {
@@ -37,6 +40,12 @@ public final class CustomerMaster {
         public static final String COLUMN_NAME_PRODUCTIMAGE="image";
         public static final String COLUMN_NAME_FOREIGNKEY="cid";
         public static final String COLUMN_NAME_CATEGORY_NAME="cname";
+
+        public CakeItems(Bitmap bitmap) {
+        }
+
+        public void setId(String id) {
+        }
     }
     public static class PaymentDetails implements BaseColumns{
         public static final String TABLE_NAME="payment";
